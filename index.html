@@ -13,7 +13,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        logo.{
+        }
+        .logo {
             width: 100px; /* Adjust as per your logo size */
         }
         h1 {
@@ -32,13 +33,72 @@
 <body>
     <header>
         <div class="logo">
-            <img src="car logo.jpg" width;100> <!-- Replace "logo.png" with the path to your logo image -->
+            <img src="car logo.jpg" alt="SpeedStar Motors Logo">
         </div>
         <h1>SpeedStar Motors</h1>
         <div>
-            <a href="about.html" class="about-us">About Us</a> <!-- Replace "about.html" with the path to your about page -->
+            <a href="about.html" class="about-us">About Us</a> 
         </div>
     </header>
-    <!-- Rest of your website content goes here -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .car-button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .car-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Brands</h1>
+    <ul>
+        <li><h2>Porsche</h2></li>
+        <li><button class="car-button" onclick="showPorsche()">Show Porsche</button></li>
+        <li><h2>Ferrari</h2></li>
+        <li><button class="car-button" onclick="showFerrari()">Show Ferrari</button></li>
+        <li><h2>Lamborghini</h2></li>
+        <li><button class="car-button" onclick="showLamborghini()">Show Lamborghini</button></li>
+    </ul>
+
+    <script>
+        function showPorsche() {
+            alert("You clicked on Porsche!");
+            // Add your desired action for Porsche button here
+        }
+        
+        function showFerrari() {
+            alert("You clicked on Ferrari!");
+            // Add your desired action for Ferrari button here
+        }
+        
+        function showLamborghini() {
+            alert("You clicked on Lamborghini!");
+            // Add your desired action for Lamborghini button here
+        }
+    </script>
+</body>
+</html>
+
+    
 </body>
 </html>
